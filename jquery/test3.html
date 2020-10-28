@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="C:\Users\DELL\Desktop\Assignment\bootstrap-4.5.2-dist\css\bootstrap.min.css">
+
+        <script>
+            $(document).ready(function(){
+                $("#name").blur(function(){
+                    var name = $(this).val()
+                    if(name.length < 5){
+                        $("#error").css({"visibility" : "visible"})
+                    }
+                    else{
+                        $("#error").css({"visibility" : "hidden"})
+                    }
+                })
+            });
+        </script>
+</head>
+
+<body>
+    <div id="container">
+        <label>name</label>
+        <input type="text" id="name">
+        <span id="error" style="color: red; visibility: hidden;">Enter your name</span>
+        <label>email</label>
+        <input type="text" id="email">
+    </div>
+</body>
+
+</html>

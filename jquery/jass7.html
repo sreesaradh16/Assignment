@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="C:\Users\DELL\Desktop\Assignment\bootstrap-4.5.2-dist\css\bootstrap.min.css">
+
+        <script>
+            $(document).ready(function(){
+                $("#btn1").click(function(){
+                    $("#rect").animate({width:"500px"});
+                });
+            });
+        </script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="div" id="rect" style="height: 100px; width: 200px; background-color: blueviolet;margin-top: 10px;"></div>
+        <br>
+        <button id="btn1">click me</button>
+    </div>
+</body>
+
+</html>
